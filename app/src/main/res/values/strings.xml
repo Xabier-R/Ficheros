@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Ficheros</string>
+    <string name="Titulo">Contenido a escribir</string>
+    <string name="fichero_Int">Anadir fich int.</string>
+    <string name="fichero_Ext">Anadir fich ext.</string>
+    <string name="Leerfichero_Int">leer fich int.</string>
+    <string name="Leerfichero_Ext">leer fich ext.</string>
+    <string name="leer_recuso">leer recuso</string>
+    <string name="Borrarfichero_Ext">Borrar fich ext</string>
+    <string name="Borrarfichero_Int">Borrar fich int</string>
+    <string name="Resultado">El contenido del archivo es:</string>
+</resources>
