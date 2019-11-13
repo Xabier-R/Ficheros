@@ -1,0 +1,108 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="25dp"
+    android:layout_marginRight="25dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Titulo"
+        android:id="@+id/etPresentacion"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editTextEscribir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPresentacion"
+        android:ems="10"
+        android:clickable="false" />
+
+    <Button
+        android:id="@+id/BtEscribirFichero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fichero_Int"
+        android:layout_below="@id/editTextEscribir"
+        android:onClick="escribirFichero"/>
+
+    <Button
+        android:id="@+id/BtEscribirFicheroSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextEscribir"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/BtLeerFichero"
+        android:onClick="leerFichero"
+        android:text="@string/fichero_Ext" />
+
+
+    <Button
+        android:id="@+id/BtLeerFichero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtEscribirFicheroSD"
+        android:onClick="leerFichero"
+        android:text="@string/Leerfichero_Int" />
+
+    <Button
+        android:id="@+id/BtLeerFicheroSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtEscribirFicheroSD"
+        android:layout_toEndOf="@+id/BtLeerFichero"
+        android:onClick="leerFichero"
+        android:text="@string/Leerfichero_Ext" />
+
+    <Button
+        android:id="@+id/BtLeerRecuso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtEscribirFicheroSD"
+        android:layout_toEndOf="@+id/BtLeerFicheroSD"
+        android:onClick="leerRecurso"
+        android:text="@string/leer_recuso" />
+
+
+    <Button
+        android:id="@+id/BtBorrarFich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtLeerRecuso"
+        android:text="@string/Borrarfichero_Int"
+        android:onClick="borrarrFichero"/>
+
+    <Button
+        android:id="@+id/BtBorrarFichSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BtLeerRecuso"
+        android:layout_toEndOf="@+id/BtBorrarFich"
+        android:onClick="leerFichero"
+        android:text="@string/Borrarfichero_Ext" />
+
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/Resultado"
+        android:layout_below="@+id/BtBorrarFichSD"
+        android:textSize="18dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewContenido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resultado"
+        android:textSize="15dp"/>
+
+
+
+
+</RelativeLayout>
